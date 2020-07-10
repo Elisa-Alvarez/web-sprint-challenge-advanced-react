@@ -21,6 +21,13 @@ function App() {
     setCart(cart.filter((p) => p.id !== plant.id));
   };
 
+  // light mode on navagation bar
+  const [lightMode, setLightMode] = useLightMode(false);
+  const toggleMode = e => {
+    e.preventDefault();
+  setLightMode(!lightMode);
+};
+
   return (
     <div>
       <Router>
@@ -43,6 +50,12 @@ function App() {
               </NavLink>
             </li>
           </ul>
+          <div className="light-mode__toggle">
+            <div
+              onClick={toggleMode}
+              className={lightMode ? 'toggle toggled' : 'toggle'}
+              />
+          </div>
         </nav>
         <Route
           exact
