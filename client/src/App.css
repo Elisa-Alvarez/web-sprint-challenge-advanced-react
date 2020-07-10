@@ -109,6 +109,33 @@ p {
 .cart .plant-details {
   justify-content: center;
 }
+.light-mode__toggle {
+  background: aqua;
+  border-radius: 50px;
+  border: 1px solid white;
+  height: 20px;
+  position: relative;
+  width: 48px;
+}
+
+.toggle {
+  background: aliceblue;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 28px;
+}
+
+.light-mode {
+  background-color: lightgreen;
+
+}
 
 .checkout-section {
   color: #fff;
