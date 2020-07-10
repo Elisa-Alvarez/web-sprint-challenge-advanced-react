@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  To build a statefull class component you need to add state ={} so that the data can travel with the component. The this.state attaches your state to the component.
+
 2. Describe the different phases of the component lifecycle.
+
+  Componets will Mount, Update, and Unmount.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+componentWillMount is for api fetching before the dom is render, componentDidMount allows us to minipulate the api,dom or other elements after the dom Renders, componentUpdate allows for manual updates without constant refreshing, componentUnmount removes item from dom ex: login info.
+
 4. Define stateful logic.
 
+Stateful logic is a way to access state inside of a library so you can acess it through your code without having to rewrite state
+
 5. Describe how to test a React component with React Testing Library.
+
+First npm i -D jest-dom react-testing-library, in your file.test you will select elements usin get, find, and query selectors to test the items on the DOM.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
